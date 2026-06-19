@@ -1,14 +1,15 @@
 // ================= DATA =================
 const secretVault = {
     "SUNFLOWER": { name: "Churchille", message: "You always bring such bright, warm energy to everyone around you. Thank you for being such a constant, uplifting presence in my life!" },
-    "STARLIGHT":  { name: "Lindsay",   message: "Your creativity and kindness never fail to amaze me. I am so lucky to have a friend who shines as brightly as you do." },
-    "COZYMUG":    { name: "Sheariah",  message: "You are the human equivalent of a warm cup of tea on a rainy day. Thank you for always listening and being such a comforting, safe space." },
-    "WILDFLOWER": { name: "Sophia",    message: "I love your free spirit and the beautiful way you see the world. Never lose that amazing spark that makes you so unique!" },
-    "CAMPFIRE":   { name: "Deborah",   message: "You have a heart of gold and a spirit that just brings people together. I cherish all our laughs and deep conversations." },
-    "SEAGLASS":   { name: "Samantha",  message: "You are rare, beautiful, and incredibly strong. I appreciate your honesty and your unwavering support more than words can say." },
-    "BOOKWORM":   { name: "Thea",      message: "Your wisdom and quiet strength inspire me constantly. Thank you for all the shared stories and for always knowing exactly what to say." },
-    "COMPASS":    { name: "Khaster",   message: "You are always pointing people in the right direction with your solid advice and genuine heart. Thanks for being such a reliable, awesome friend!" },
-    "LANTERN":    { name: "Jefferson", message: `Some people walk into your life with an introduction.
+    "STARLIGHT": { name: "Lindsay", message: "Your creativity and kindness never fail to amaze me. I am so lucky to have a friend who shines as brightly as you do." },
+    "COZYMUG": { name: "Sheariah", message: "You are the human equivalent of a warm cup of tea on a rainy day. Thank you for always listening and being such a comforting, safe space." },
+    "WILDFLOWER": { name: "Sophia", message: "I love your free spirit and the beautiful way you see the world. Never lose that amazing spark that makes you so unique!" },
+    "CAMPFIRE": { name: "Deborah", message: "You have a heart of gold and a spirit that just brings people together. I cherish all our laughs and deep conversations." },
+    "SEAGLASS": { name: "Samantha", message: "You are rare, beautiful, and incredibly strong. I appreciate your honesty and your unwavering support more than words can say." },
+    "BOOKWORM": { name: "Thea", message: "Your wisdom and quiet strength inspire me constantly. Thank you for all the shared stories and for always knowing exactly what to say." },
+    "COMPASS": { name: "Khaster", message: "You are always pointing people in the right direction with your solid advice and genuine heart. Thanks for being such a reliable, awesome friend!" },
+    "LANTERN": {
+        name: "Jefferson", message: `Some people walk into your life with an introduction.
 
 You didn't.
 
@@ -47,8 +48,9 @@ Life would've looked very different without you in it. And I honestly don't like
 
 I'm grateful you showed up.
 Unexpectedly.
-And then stayed.`, signature: `  - Lalay <33` },
-    "ORIGAMI":    { name: "Lourish",   message: "You have such a beautiful, intricate mind and a kind soul. I deeply value our friendship and the completely unique perspective you bring to my life." }
+And then stayed.`, signature: `  - Lalay <33`
+    },
+    "ORIGAMI": { name: "Lourish", message: "You have such a beautiful, intricate mind and a kind soul. I deeply value our friendship and the completely unique perspective you bring to my life." }
 };
 
 // ================= ENVELOPE COLOR PALETTES =================
@@ -62,38 +64,58 @@ const envColors = [
 ];
 
 // ================= DOM =================
-const letterGrid     = document.getElementById('letter-grid');
-const searchInput    = document.getElementById('search-input');
+const letterGrid = document.getElementById('letter-grid');
+const searchInput = document.getElementById('search-input');
 
-const letterModal    = document.getElementById('letter-modal');
-const poemModal      = document.getElementById('poem-modal');
-const unfoldModal    = document.getElementById('unfold-modal');
+const letterModal = document.getElementById('letter-modal');
+const poemModal = document.getElementById('poem-modal');
+const unfoldModal = document.getElementById('unfold-modal');
 
-const modalGreeting   = document.getElementById('modal-greeting');
-const modalMessage    = document.getElementById('modal-message');
-const modalSignature  = document.getElementById('modal-signature');
+const modalGreeting = document.getElementById('modal-greeting');
+const modalMessage = document.getElementById('modal-message');
+const modalSignature = document.getElementById('modal-signature');
 const passwordOverlay = document.getElementById('password-overlay');
-const unlockPasscode  = document.getElementById('unlock-passcode');
-const unlockBtn       = document.getElementById('unlock-btn');
-const unlockError     = document.getElementById('unlock-error');
+const unlockPasscode = document.getElementById('unlock-passcode');
+const unlockBtn = document.getElementById('unlock-btn');
+const unlockError = document.getElementById('unlock-error');
 
-const passNoteForm   = document.getElementById('pass-note-form');
-const noteRecipient  = document.getElementById('note-recipient');
-const noteMessage    = document.getElementById('note-message');
-const flightKeyResult= document.getElementById('flight-key-result');
-const flightKeyText  = document.getElementById('flight-key-text');
-const copyKeyBtn     = document.getElementById('copy-key-btn');
+const passNoteForm = document.getElementById('pass-note-form');
+const noteRecipient = document.getElementById('note-recipient');
+const noteMessage = document.getElementById('note-message');
+const flightKeyResult = document.getElementById('flight-key-result');
+const flightKeyText = document.getElementById('flight-key-text');
+const copyKeyBtn = document.getElementById('copy-key-btn');
 
-const catchForm      = document.getElementById('catch-form');
+const catchForm = document.getElementById('catch-form');
 const flightKeyInput = document.getElementById('flight-key-input');
-const catchError     = document.getElementById('catch-error');
-const caughtRecipient= document.getElementById('caught-recipient');
-const caughtMessage  = document.getElementById('caught-message-text');
+const catchError = document.getElementById('catch-error');
+const caughtRecipient = document.getElementById('caught-recipient');
+const caughtMessage = document.getElementById('caught-message-text');
+
+const catchBtn = document.getElementById('catch-btn');
+const catchExpired = document.getElementById('catch-expired');
 
 const origamiContainer = document.getElementById('origami-container');
 
 // State
 let currentActiveCode = null;
+
+// ================= FIREBASE SETUP =================
+// ⚠️  PASTE YOUR FIREBASE CONFIG HERE (see setup guide)
+const firebaseConfig = {
+    apiKey: "AIzaSyCb6pttQ3ww3WgoowsYBmPnT1W66Ej7W40",
+    authDomain: "secret-letter-13fd4.firebaseapp.com",
+    databaseURL: "https://secret-letter-13fd4-default-rtdb.firebaseio.com",
+    projectId: "secret-letter-13fd4",
+    storageBucket: "secret-letter-13fd4.firebasestorage.app",
+    messagingSenderId: "114247089482",
+    appId: "1:114247089482:web:171a6aff09a59d9c7515b3",
+    measurementId: "G-DV9JYXP0BQ"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+const THREE_DAYS_MS = 3 * 24 * 60 * 60 * 1000;
 
 // ================= UTILS =================
 
@@ -160,7 +182,7 @@ function renderGrid() {
         card.dataset.code = code;
 
         const colorSet = envColors[index % envColors.length];
-        const initial  = person.name.charAt(0).toUpperCase();
+        const initial = person.name.charAt(0).toUpperCase();
 
         card.innerHTML = `
             ${buildEnvelopeSVG(colorSet, initial)}
@@ -188,7 +210,7 @@ function openLetterModal(code, person) {
 
     // Show "Dear S*****," — ALWAYS masked until unlocked
     modalGreeting.textContent = maskedGreeting(person.name);
-    modalMessage.textContent  = person.message;
+    modalMessage.textContent = person.message;
 
     // Set signature if present (blurred along with message)
     if (person.signature) {
@@ -256,36 +278,49 @@ function attemptUnlock() {
 
 // ================= MAILROOM =================
 
-// Send a Note
-passNoteForm.addEventListener('submit', (e) => {
+// ================= MAILROOM (FIREBASE) =================
+
+// --- Send a Note ---
+passNoteForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const recipient = noteRecipient.value.trim();
-    const msg       = noteMessage.value.trim();
+    const msg = noteMessage.value.trim();
     if (!msg || !recipient) return;
 
-    const newKey = generateFlightKey();
-    const saved  = JSON.parse(localStorage.getItem('scrapbook_notes') || '{}');
-    saved[newKey] = { recipient, message: msg };
-    localStorage.setItem('scrapbook_notes', JSON.stringify(saved));
-
+    const sendBtn = passNoteForm.querySelector('button[type="submit"]');
+    sendBtn.textContent = '✈️ Folding...';
+    sendBtn.disabled = true;
     flightKeyResult.style.display = 'none';
-    const btn = passNoteForm.querySelector('button[type="submit"]');
-    btn.textContent = '✈️ Folding...';
-    btn.disabled = true;
 
-    origamiContainer.classList.add('active');
+    try {
+        const newKey = generateFlightKey();
 
-    setTimeout(() => {
-        origamiContainer.classList.remove('active');
-        flightKeyText.textContent = newKey;
-        flightKeyResult.style.display = 'block';
-        btn.textContent = 'Fold & Send! ✈️';
-        btn.disabled = false;
-        passNoteForm.reset();
-    }, 3000);
+        // Save to Firebase (works across all devices!)
+        await db.ref(`mailroom/${newKey}`).set({
+            recipient,
+            message: msg,
+            createdAt: Date.now()
+        });
+
+        // Play origami animation, then reveal key
+        origamiContainer.classList.add('active');
+        setTimeout(() => {
+            origamiContainer.classList.remove('active');
+            flightKeyText.textContent = newKey;
+            flightKeyResult.style.display = 'block';
+            sendBtn.textContent = 'Fold & Send! ✈️';
+            sendBtn.disabled = false;
+            passNoteForm.reset();
+        }, 3000);
+
+    } catch (err) {
+        console.error('Firebase write error:', err);
+        sendBtn.textContent = 'Error — try again';
+        sendBtn.disabled = false;
+    }
 });
 
-// Copy Key
+// --- Copy Key ---
 copyKeyBtn.addEventListener('click', () => {
     navigator.clipboard.writeText(flightKeyText.textContent).then(() => {
         const orig = copyKeyBtn.textContent;
@@ -294,33 +329,55 @@ copyKeyBtn.addEventListener('click', () => {
     });
 });
 
-// Catch a Plane
-catchForm.addEventListener('submit', (e) => {
+// --- Catch a Plane ---
+catchForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const key   = flightKeyInput.value.trim().toUpperCase();
-    const saved = JSON.parse(localStorage.getItem('scrapbook_notes') || '{}');
-    const note  = saved[key];
+    const key = flightKeyInput.value.trim().toUpperCase();
 
-    if (note) {
-        catchError.classList.remove('active');
+    // Reset feedback
+    catchError.classList.remove('active');
+    catchExpired.classList.remove('active');
+    catchBtn.textContent = '🔍 Searching...';
+    catchBtn.disabled = true;
+
+    try {
+        const snapshot = await db.ref(`mailroom/${key}`).get();
+
+        if (!snapshot.exists()) {
+            catchError.classList.add('active');
+            catchBtn.textContent = 'Catch It! 🤝';
+            catchBtn.disabled = false;
+            return;
+        }
+
+        const note = snapshot.val();
+
+        // Check 3-day expiry
+        if (Date.now() - note.createdAt > THREE_DAYS_MS) {
+            await db.ref(`mailroom/${key}`).remove();
+            catchExpired.classList.add('active');
+            catchBtn.textContent = 'Catch It! 🤝';
+            catchBtn.disabled = false;
+            flightKeyInput.value = '';
+            return;
+        }
+
+        // Valid note — show it!
         flightKeyInput.value = '';
-
         caughtRecipient.textContent = `To: ${note.recipient}`;
-        caughtMessage.textContent   = note.message;
-
-        const catchBtn = catchForm.querySelector('button[type="submit"]');
-        catchBtn.textContent = '🛬 Catching...';
-        catchBtn.disabled = true;
+        caughtMessage.textContent = note.message;
 
         origamiContainer.classList.add('active');
-
         setTimeout(() => {
             origamiContainer.classList.remove('active');
             catchBtn.textContent = 'Catch It! 🤝';
             catchBtn.disabled = false;
             unfoldModal.classList.add('active');
         }, 3000);
-    } else {
-        catchError.classList.add('active');
+
+    } catch (err) {
+        console.error('Firebase read error:', err);
+        catchBtn.textContent = 'Error — try again';
+        catchBtn.disabled = false;
     }
 });
