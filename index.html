@@ -52,13 +52,26 @@
     <!-- =============== STICKY HEADER =============== -->
     <header id="site-header" class="site-header">
         <div class="header-inner">
-            <a href="#hero" class="logo">✉️ Secret Letters</a>
+            <a href="#hero" class="logo">
+                <svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg" class="site-logo-icon">
+                    <rect x="1" y="1" width="138" height="98" rx="3" fill="#ffffff" stroke="#dcd3c4" stroke-width="2"/>
+                    <polygon points="1,1 139,1 70,50" fill="#dcd3c4" opacity="0.55"/>
+                    <line x1="1" y1="99" x2="70" y2="50" stroke="#dcd3c4" stroke-width="1.2" opacity="0.6"/>
+                    <line x1="139" y1="99" x2="70" y2="50" stroke="#dcd3c4" stroke-width="1.2" opacity="0.6"/>
+                    <g transform="translate(70, 50) scale(1.5) translate(-70, -50)">
+                        <path d="M 70 40 C 55 28 45 50 70 64 C 95 50 85 28 70 40" fill="var(--accent-red)"/>
+                        <path d="M 70 42 C 58 32 50 50 70 61 C 90 50 82 32 70 42" fill="none" stroke="#6b1e1e" stroke-width="0.5" opacity="0.6"/>
+                        <text x="70" y="55" font-family="'Dancing Script', cursive" font-size="16" font-weight="bold" fill="#ffd700" text-anchor="middle">S</text>
+                    </g>
+                </svg>
+                Secret Letters
+            </a>
             <nav class="main-nav">
                 <a href="#hero" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#search-section" class="nav-link">Letters</a>
+                <a href="#about" class="nav-link">How it Works</a>
+                <a href="#receiving" class="nav-link">Letters / Mailroom</a>
                 <a href="#compose" class="nav-link">Compose</a>
-                <a href="#mailroom" class="nav-link">Mailroom</a>
+                <a href="#anonymous-mood" class="nav-link">Whispers</a>
             </nav>
             <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
@@ -73,14 +86,14 @@
                 <div class="tape tape-top-left" style="background: var(--tape-pink);"></div>
                 <div class="tape tape-top-right" style="background: var(--tape-blue);"></div>
                 <h1>Secret Letters</h1>
-                <p class="hero-tagline">A cozy little haven for the people I treasure ✨</p>
-                <p class="hero-desc">Write heartfelt letters, customize them with colors and stickers, attach photos &
-                    voice notes — then fold them into paper planes and send them flying to the people you love.</p>
+                <p class="hero-tagline">A little space for the people who matter most.</p>
+                <p class="hero-desc">Write the things you don't always get to say. Add your favorite colors, playful stickers, photos, and voice notes that capture the moment. Then fold your letter into a paper plane and send it on its way.</p>
                 <div class="hero-actions">
-                    <a href="#compose" class="btn btn-primary">✍️ Write a Letter</a>
-                    <a href="#mailroom" class="btn btn-secondary">🛬 Catch a Plane</a>
+                    <a href="#compose" class="btn btn-primary" style="font-size: 1.1rem; padding: 12px 24px;">✍️ Start Writing</a>
+                    <a href="#receiving" class="btn btn-secondary" style="font-size: 1.1rem; padding: 12px 24px;">🛬 Catch a Plane</a>
+                    <a href="#anonymous-mood" class="btn" style="font-size: 1.1rem; padding: 12px 24px; background: var(--tape-green); color: var(--text-main);">✨ Read Whispers</a>
                 </div>
-                <div class="click-hint" id="creator-card" style="cursor:pointer;">✦ Click to read a note from the
+                <div class="click-hint" id="creator-card" style="cursor:pointer; margin-top: 24px;">✦ Click to read a note from the
                     creator ✦</div>
             </div>
         </div>
@@ -92,20 +105,20 @@
             <h2 class="section-title">How It Works</h2>
             <div class="about-grid">
                 <div class="about-card">
-                    <div class="about-icon">✍️</div>
-                    <h3>Write from the Heart</h3>
-                    <p>Pour your feelings onto digital paper. Choose colors, fonts, and stickers. Attach a photo or
+                    <div class="about-icon">📝</div>
+                    <h3>1. Write from the Heart</h3>
+                    <p>Pour your feelings onto digital paper. Choose dynamic colors, beautiful fonts, and quirky stickers. Attach a photo or
                         record a voice note to make it truly personal.</p>
                 </div>
                 <div class="about-card">
                     <div class="about-icon">✈️</div>
-                    <h3>Fold & Send It Flying</h3>
+                    <h3>2. Fold & Send It Flying</h3>
                     <p>Watch your letter transform into an origami plane and fly across the screen. Share the unique
-                        5-character Flight Key with your person.</p>
+                        5-character Flight Key with your favorite person.</p>
                 </div>
                 <div class="about-card">
                     <div class="about-icon">💌</div>
-                    <h3>Catch & Unwrap</h3>
+                    <h3>3. Catch & Unwrap</h3>
                     <p>Your friend enters the Flight Key from any device, anywhere in the world. The plane lands, the
                         letter unfolds — and your words come alive.</p>
                 </div>
@@ -113,31 +126,59 @@
         </div>
     </section>
 
-    <!-- =============== SEARCH / LETTERS SECTION =============== -->
-    <section id="search-section" class="search-section">
+    <!-- =============== RECEIVING SECTION (SEARCH & MAILROOM) =============== -->
+    <section id="receiving" class="receiving-section" style="padding-bottom: 10px; scroll-margin-top: 80px;">
         <div class="section-inner">
-            <h2 class="section-title">Find a Letter</h2>
-            <p class="section-subtitle">Search by name to find letters written for someone special.</p>
-            <div class="search-wrapper">
-                <div class="tape tape-top-center" style="background: var(--tape-green);"></div>
-                <div class="search-bar">
-                    <span class="search-icon">🔍</span>
-                    <input type="text" id="search-input" placeholder="Type a name..." autocomplete="off">
+            <div class="receiving-desk-card">
+                <div class="tape tape-top-center" style="background: var(--tape-blue);"></div>
+                
+                <div class="receiving-desk-grid">
+                    <!-- Search Half -->
+                    <div id="search-section" class="desk-half" style="scroll-margin-top: 140px;">
+                        <h2 class="desk-title">🔍 Find a Letter</h2>
+                        <p class="desk-subtitle">Search by name to find letters written for someone special.</p>
+                        
+                        <label class="search-bar" for="search-input" style="margin-top: auto; display: flex; align-items: center; gap: 8px; cursor: text;">
+                            <span class="search-icon" style="font-size: 1.2rem;">🔍</span>
+                            <input type="text" id="search-input" placeholder="Type a name..." autocomplete="off" style="width: 100%;">
+                        </label>
+                    </div>
+                    
+                    <div class="desk-divider"></div>
+
+                    <!-- Mailroom Half -->
+                    <div id="mailroom" class="desk-half" style="scroll-margin-top: 140px;">
+                        <h2 class="desk-title">📬 The Mailroom</h2>
+                        <p class="desk-subtitle">Got a Flight Key? Catch your letter here.</p>
+                        
+                        <form id="catch-form" style="margin-top: auto; padding-top: 20px;">
+                            <div class="input-group">
+                                <label class="input-label" for="flight-key-input" style="display: none;">Flight Key:</label>
+                                <input type="text" id="flight-key-input" placeholder="Paste 5-char key..." maxlength="5" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="catch-btn" style="width: 100%; margin-top: 10px; display: flex; justify-content: center; align-items: center; gap: 8px;">Catch It! 🤝</button>
+                            <p id="catch-error" class="error-msg">Hmm, no note found with that key.</p>
+                            <p id="catch-expired" class="error-msg">✦ This note has expired (3-day limit).</p>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div id="search-results" class="search-results">
+
+            <!-- Full Width Search Results -->
+            <div id="search-results" class="search-results" style="margin-top: 40px;">
                 <!-- Envelope cards appear here on search -->
                 <div class="search-empty" id="search-empty">
-                    <p>🔎 Start typing a name above to discover their letters...</p>
                 </div>
             </div>
         </div>
     </section>
 
+
+
     <!-- =============== COMPOSE SECTION =============== -->
     <section id="compose" class="compose-section">
         <div class="section-inner">
-            <h2 class="section-title">✉️ Compose a Letter</h2>
+            <h2 class="section-title">✍️ Compose a Letter</h2>
             <p class="section-subtitle">Create something beautiful for someone you care about.</p>
 
             <div class="composer-container">
@@ -162,8 +203,9 @@
                     <div class="input-group">
                         <label class="input-label" for="compose-message">Your Letter:</label>
                         <div id="compose-preview" class="compose-preview" style="display:none;"></div>
-                        <textarea id="compose-message" placeholder="Write from the heart..." rows="8"
-                            required></textarea>
+                        <div class="compose-canvas" id="compose-canvas">
+                            <textarea id="compose-message" placeholder="Write from the heart..." rows="8" required></textarea>
+                        </div>
                     </div>
 
                     <!-- ===== DESIGN TOOLKIT ===== -->
@@ -209,13 +251,54 @@
                         </div>
 
                         <div class="toolkit-row">
-                            <label class="toolkit-label">Layout:</label>
-                            <div class="layout-picker" id="layout-picker">
-                                <button type="button" class="layout-opt active" data-layout="left"
-                                    title="Left aligned">☰</button>
-                                <button type="button" class="layout-opt" data-layout="centered"
-                                    title="Centered">☷</button>
-                                <button type="button" class="layout-opt" data-layout="poetic" title="Poetic">❋</button>
+                            <label class="toolkit-label">Alignment:</label>
+                            <div class="layout-picker" id="layout-picker" style="display: flex; gap: 4px;">
+                                <button type="button" class="layout-opt active" data-layout="left" title="Left aligned" style="padding: 6px; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="15" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                                </button>
+                                <button type="button" class="layout-opt" data-layout="center" title="Centered" style="padding: 6px; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="7" y1="12" x2="17" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                                </button>
+                                <button type="button" class="layout-opt" data-layout="justify" title="Justified" style="padding: 6px; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                                </button>
+                                <button type="button" class="layout-opt" data-layout="two-columns" title="Two Columns" style="padding: 6px; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="3" y1="6" x2="10" y2="6"></line><line x1="3" y1="10" x2="10" y2="10"></line><line x1="3" y1="14" x2="10" y2="14"></line><line x1="3" y1="18" x2="10" y2="18"></line>
+                                        <line x1="14" y1="6" x2="21" y2="6"></line><line x1="14" y1="10" x2="21" y2="10"></line><line x1="14" y1="14" x2="21" y2="14"></line><line x1="14" y1="18" x2="21" y2="18"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="toolkit-row">
+                            <label class="toolkit-label">Wax Seal:</label>
+                            <div class="seal-picker" id="seal-picker">
+                                <button type="button" class="seal-opt active" data-seal="circle" title="Circle S">
+                                    <svg viewBox="0 0 32 32" width="32" height="32">
+                                        <circle cx="16" cy="16" r="15" fill="var(--accent-red)"/>
+                                        <circle cx="16" cy="16" r="13" fill="none" stroke="#6b1e1e" stroke-width="0.5" opacity="0.6"/>
+                                        <text x="16" y="22" font-family="'Dancing Script', cursive" font-size="18" font-weight="bold" fill="#ffd700" text-anchor="middle">S</text>
+                                    </svg>
+                                </button>
+                                <button type="button" class="seal-opt" data-seal="heart" title="Heart S">
+                                    <svg viewBox="0 0 32 32" width="32" height="32">
+                                        <path d="M 16 6 C 1 -6 -9 16 16 30 C 41 16 31 -6 16 6" fill="var(--accent-red)"/>
+                                        <path d="M 16 8 C 4 -2 -4 16 16 27 C 36 16 28 -2 16 8" fill="none" stroke="#6b1e1e" stroke-width="0.5" opacity="0.6"/>
+                                        <text x="16" y="21" font-family="'Dancing Script', cursive" font-size="16" font-weight="bold" fill="#ffd700" text-anchor="middle">S</text>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="toolkit-row">
+                            <label class="toolkit-label">Privacy:</label>
+                            <div class="privacy-picker" id="privacy-picker">
+                                <label class="privacy-toggle">
+                                    <input type="checkbox" id="lock-toggle" checked>
+                                    <span class="privacy-slider"></span>
+                                </label>
+                                <span class="privacy-status" id="privacy-status">Locked 🔒</span>
                             </div>
                         </div>
 
@@ -224,14 +307,14 @@
                             <div class="sticker-panel" id="sticker-panel">
                                 <!-- Populated by JS -->
                             </div>
-                            <div class="selected-stickers" id="selected-stickers"></div>
+                            <p class="toolkit-hint" style="font-size:0.8rem; color:var(--text-muted); margin-top:4px;">Click a sticker to add it, then drag it around your letter!</p>
                         </div>
                     </div>
 
                     <!-- ===== ATTACHMENTS ===== -->
                     <div class="attachments-row">
                         <div class="attachment-box">
-                            <label class="attachment-label" for="photo-input">📷 Attach Photo</label>
+                            <label class="attachment-label" for="photo-input">📷 Attach a Photo</label>
                             <input type="file" id="photo-input" accept="image/*" style="display:none;">
                             <div id="photo-preview" class="photo-preview" style="display:none;">
                                 <img id="photo-thumb" src="" alt="Preview">
@@ -240,7 +323,7 @@
                         </div>
                         <div class="attachment-box">
                             <div class="voice-recorder">
-                                <button type="button" id="record-btn" class="record-btn">🎙️ Record Voice</button>
+                                <button type="button" id="record-btn" class="record-btn">🎤 Record Voice</button>
                                 <span id="record-timer" class="record-timer" style="display:none;">0:00 / 0:30</span>
                                 <div id="voice-preview" class="voice-preview" style="display:none;">
                                     <audio id="voice-playback" controls></audio>
@@ -265,27 +348,55 @@
         </div>
     </section>
 
-    <!-- =============== MAILROOM SECTION =============== -->
-    <section id="mailroom" class="mailroom-section">
-        <div class="section-inner">
-            <h2 class="section-title">🛬 The Mailroom</h2>
-            <p class="section-subtitle">Got a Flight Key? Catch your letter here.</p>
+    <!-- =============== ANONYMOUS MOOD SECTION =============== -->
 
-            <div class="mailroom-card">
-                <div class="tape tape-top-center" style="background: var(--tape-blue);"></div>
-                <form id="catch-form">
-                    <div class="input-group">
-                        <label class="input-label" for="flight-key-input">Flight Key:</label>
-                        <input type="text" id="flight-key-input" placeholder="Paste your 5-character key" maxlength="5"
-                            required>
+    <section id="anonymous-mood" class="mood-section">
+        <div class="section-inner">
+            <h2 class="section-title">🌬️ Whispers in the Wind</h2>
+            <p class="section-subtitle">A safe space for anonymous thoughts and shared feelings.</p>
+            
+            <div class="mood-board-container">
+                <div class="tape tape-top-center" style="background: var(--tape-green);"></div>
+                
+                <!-- Toggle Tabs -->
+                <div class="mood-tabs">
+                    <button class="mood-tab active" id="tab-read">Read Anonymous Letters</button>
+                    <button class="mood-tab" id="tab-write">Write Anonymous Letter</button>
+                </div>
+                
+                <!-- Read Mode (Catch a Vibe) -->
+                <div id="mood-read-mode" class="mood-mode-content active">
+                    <p class="mood-instruction">What are you looking for today? Tap a mood to read what others have shared.</p>
+                    <div class="mood-pills-container" id="mood-filter-pills">
+                        <!-- Populated by JS -->
                     </div>
-                    <button type="submit" class="btn btn-primary" id="catch-btn">Catch It! 🤝</button>
-                    <p id="catch-error" class="error-msg">Hmm, no note found with that key.</p>
-                    <p id="catch-expired" class="error-msg">✦ This note has expired (3-day limit).</p>
-                </form>
+                    <div class="anonymous-notes-grid" id="anonymous-notes-grid">
+                        <div class="search-empty">Select a mood above to see anonymous letters...</div>
+                    </div>
+                </div>
+                
+                <!-- Write Mode (Send to the Universe) -->
+                <div id="mood-write-mode" class="mood-mode-content" style="display: none;">
+                    <p class="mood-instruction">Write whatever is on your mind. No names, just feelings.</p>
+                    <form id="anonymous-form">
+                        <input type="hidden" id="selected-mood-input">
+                        <textarea id="anonymous-message" class="anonymous-textarea" placeholder="I've been thinking about..." rows="6" required></textarea>
+                        
+                        <p class="toolkit-label" style="margin-top: 20px; margin-bottom: 10px;">Tag your feelings (choose one or more):</p>
+                        <div class="mood-pills-container" id="mood-select-pills">
+                            <!-- Populated by JS -->
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" id="anonymous-send-btn" style="display: block; width: fit-content; margin: 20px auto 0;">Release into the Universe ✈️</button>
+                        <p id="anonymous-success-msg" class="success-msg" style="display:none; text-align:center; margin-top:10px; color: var(--accent-red); font-weight: bold;">Your letter has floated away into the universe! ✈️</p>
+                        <p id="anonymous-error-msg" class="error-msg" style="display:none; text-align:center; margin-top:10px;">Please select a mood tag before sending.</p>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- =============== ANIMATED ENVELOPE BANNER =============== -->
     <section id="envelope-banner" class="envelope-banner">
@@ -301,26 +412,39 @@
     <footer class="site-footer">
         <div class="footer-inner">
             <div class="footer-col">
-                <h4>✉️ Secret Letters</h4>
+                <h4 style="display: flex; align-items: center; gap: 6px;">
+                    <svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg" class="site-logo-icon">
+                        <rect x="1" y="1" width="138" height="98" rx="3" fill="#ffffff" stroke="#dcd3c4" stroke-width="2"/>
+                        <polygon points="1,1 139,1 70,50" fill="#dcd3c4" opacity="0.55"/>
+                        <line x1="1" y1="99" x2="70" y2="50" stroke="#dcd3c4" stroke-width="1.2" opacity="0.6"/>
+                        <line x1="139" y1="99" x2="70" y2="50" stroke="#dcd3c4" stroke-width="1.2" opacity="0.6"/>
+                        <g transform="translate(70, 50) scale(1.5) translate(-70, -50)">
+                            <path d="M 70 40 C 55 28 45 50 70 64 C 95 50 85 28 70 40" fill="var(--accent-red)"/>
+                            <path d="M 70 42 C 58 32 50 50 70 61 C 90 50 82 32 70 42" fill="none" stroke="#6b1e1e" stroke-width="0.5" opacity="0.6"/>
+                            <text x="70" y="55" font-family="'Dancing Script', cursive" font-size="16" font-weight="bold" fill="#ffd700" text-anchor="middle">S</text>
+                        </g>
+                    </svg>
+                    Secret Letters
+                </h4>
                 <p>A whimsical digital scrapbook for heartfelt messages — because some words deserve more than a text
                     message.</p>
+                <p style="margin-top: 15px;">✦ Every letter carries a piece of someone's heart ✦</p>
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <a href="#hero">Home</a>
                 <a href="#compose">Write a Letter</a>
                 <a href="#mailroom">Catch a Plane</a>
+                <a href="#anonymous-mood">Whispers in the Wind</a>
                 <a href="#about">About</a>
             </div>
             <div class="footer-col">
                 <h4>Made With</h4>
-                <p>💛 Love, vanilla code, and way too much coffee.</p>
-                <p class="footer-credit">By <strong>Julyziel</strong> · <span id="footer-year"></span></p>
+                <p>💻 Love, vanilla code, and way too much coffee.</p>
+                <p class="footer-credit">By <strong>Julyziel</strong> © <span id="footer-year"></span></p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>✦ Every letter carries a piece of someone's heart ✦</p>
-        </div>
+
     </footer>
 
     <!-- =============== MODALS =============== -->
@@ -331,15 +455,16 @@
             <div class="tape tape-top-center" style="background: var(--tape-green);"></div>
             <button class="close-btn" onclick="closeModal('poem-modal')">&times;</button>
             <h2 style="font-size:1.9rem;text-align:center;">A Note from the Creator</h2>
-            <div class="poem-text">
-                <p>In a world of fleeting texts and rapid screens,</p>
-                <p>I wanted a place for our quietest dreams.</p>
-                <p>A digital scrapbook, crafted by hand,</p>
-                <p>For the very best friends in all the land.</p>
-                <p>Keep these words safe, let the paper planes fly,</p>
-                <p>A cozy little haven, just for you and I.</p>
+            <div class="creator-note-text" style="font-family: var(--font-hand); font-size: 1.25rem; line-height: 1.8; color: var(--text-main); margin-top: 24px; text-align: left;">
+                <p style="margin-bottom: 16px;">Dear friend,</p>
+                
+                <p style="margin-bottom: 16px;">In a world of fleeting texts and rapid screens, I wanted to build a place for our quietest dreams. This digital scrapbook was crafted entirely by hand, meant for the very best friends in all the land.</p>
+                
+                <p style="margin-bottom: 24px;">Please keep these words safe, and let the paper planes fly. This is a cozy little haven, just for you and I.</p>
+                
+                <p style="margin-bottom: 4px;">Warmly,</p>
             </div>
-            <div class="signature">Julyziel</div>
+            <div class="signature" style="text-align: left; margin-top: 4px;">Julyziel</div>
         </div>
     </div>
 
@@ -352,7 +477,7 @@
             <div id="modal-content-area">
                 <!-- Locked state: just shows "enter key to read" -->
                 <div id="password-overlay" class="password-form">
-                    <h3>🔐 Enter the Secret Key</h3>
+                    <h3>🔒 Enter the Secret Key</h3>
                     <p class="lock-hint">This letter's content is private. Enter the key to read it.</p>
                     <input type="password" id="unlock-passcode" placeholder="Secret Key...">
                     <br>
@@ -410,6 +535,7 @@
 
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-storage-compat.js"></script>
     <script src="script.js"></script>
