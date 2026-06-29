@@ -88,7 +88,17 @@ const STICKERS = {
     "coffee": `<svg viewBox="0 0 24 24"><rect x="5" y="8" width="12" height="12" rx="3" fill="#8d6e5a"/><path d="M17 11h2.5a2.5 2.5 0 0 1 0 5H17" fill="none" stroke="#8d6e5a" stroke-width="2.5"/><path d="M8 3c0 2-1 2-1 3M11 3c0 2-1 2-1 3M14 3c0 2-1 2-1 3" stroke="#e07a5f" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>`,
     "music": `<svg viewBox="0 0 24 24"><circle cx="6" cy="18" r="3" fill="#b5179e"/><circle cx="16" cy="16" r="3" fill="#b5179e"/><path d="M9 18V6l10-2v12" stroke="#b5179e" stroke-width="2.5" stroke-linejoin="round" fill="none"/><path d="M9 10l10-2" stroke="#b5179e" stroke-width="2" stroke-linecap="round"/></svg>`,
     "happy-face": `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#fff3b0" stroke="#ddc85e" stroke-width="1.5"/><circle cx="8.5" cy="9.5" r="1.5" fill="#4a3728"/><circle cx="15.5" cy="9.5" r="1.5" fill="#4a3728"/><path d="M8 14.5c2 2.5 6 2.5 8 0" fill="none" stroke="#4a3728" stroke-width="2" stroke-linecap="round"/></svg>`,
-    "gift": `<svg viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11" rx="1" fill="#daeeff" stroke="#9dcce8" stroke-width="1.5"/><rect x="3" y="6" width="18" height="3" rx="1" fill="#fde8e8" stroke="#f0b8b8" stroke-width="1.5"/><path d="M12 6V20" stroke="#f25f5c" stroke-width="2"/><path d="M12 6c-2-2-4-2-4 0s2 2 4 0c2-2 4-2 4 0s-2 2-4 0" fill="none" stroke="#f25f5c" stroke-width="2"/></svg>`
+    "gift": `<svg viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11" rx="1" fill="#daeeff" stroke="#9dcce8" stroke-width="1.5"/><rect x="3" y="6" width="18" height="3" rx="1" fill="#fde8e8" stroke="#f0b8b8" stroke-width="1.5"/><path d="M12 6V20" stroke="#f25f5c" stroke-width="2"/><path d="M12 6c-2-2-4-2-4 0s2 2 4 0c2-2 4-2 4 0s-2 2-4 0" fill="none" stroke="#f25f5c" stroke-width="2"/></svg>`,
+    "pizza": `<svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z" fill="#f9c74f"/><path d="M12 5l7 14H5l7-14z" fill="#f3722c"/><circle cx="12" cy="14" r="1.5" fill="#f25f5c"/><circle cx="10" cy="17" r="1.2" fill="#f25f5c"/><circle cx="15" cy="16" r="1" fill="#f25f5c"/><circle cx="12" cy="10" r="1" fill="#f25f5c"/><path d="M2 22c0 2 20 2 20 0" fill="#c8963d"/></svg>`,
+    "ghost": `<svg viewBox="0 0 24 24"><path d="M4 22l2-2 2 2 2-2 2 2 2-2 2 2 2-2 2 2V10c0-4.4-3.6-8-8-8S4 5.6 4 10v12z" fill="#f8f9fa" stroke="#ced4da" stroke-width="1"/><circle cx="9" cy="10" r="1.5" fill="#495057"/><circle cx="15" cy="10" r="1.5" fill="#495057"/><ellipse cx="12" cy="14" rx="2" ry="3" fill="#495057"/></svg>`,
+    "planet": `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6" fill="#4cc9f0"/><path d="M2 12c0 1.5 5 5 10 5s10-3.5 10-5-5-5-10-5S2 10.5 2 12z" fill="none" stroke="#7209b7" stroke-width="2" stroke-linecap="round"/></svg>`,
+    "icecream": `<svg viewBox="0 0 24 24"><polygon points="12,22 7,12 17,12" fill="#c8963d"/><path d="M7 12c0-3 2-5 5-5s5 2 5 5H7z" fill="#f48b94"/><circle cx="12" cy="5" r="2" fill="#f25f5c"/></svg>`,
+    "diamond": `<svg viewBox="0 0 24 24"><path d="M12 2l10 7-10 13L2 9z" fill="#48cae4"/><path d="M2 9h20M12 2v20M6 5l6 17M18 5L12 22" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.6"/></svg>`,
+    "fire": `<svg viewBox="0 0 24 24"><path d="M12 2c0 0-4 5-4 10a4 4 0 0 0 8 0c0-5-4-10-4-10z" fill="#f3722c"/><path d="M12 8c0 0-2 3-2 6a2 2 0 0 0 4 0c0-3-2-6-2-6z" fill="#f9c74f"/></svg>`,
+    "cactus": `<svg viewBox="0 0 24 24"><rect x="10" y="8" width="4" height="14" rx="2" fill="#43aa8b"/><path d="M10 14H7a2 2 0 0 1-2-2V9M14 12h3a2 2 0 0 0 2-2V7" stroke="#43aa8b" stroke-width="4" stroke-linecap="round" fill="none"/><rect x="8" y="20" width="8" height="3" fill="#c8963d"/></svg>`,
+    "watermelon": `<svg viewBox="0 0 24 24"><path d="M2 12A10 10 0 0 0 22 12z" fill="#f25f5c"/><path d="M2 12A10 10 0 0 0 22 12" fill="none" stroke="#43aa8b" stroke-width="3"/><circle cx="8" cy="16" r="0.8" fill="#4a3728"/><circle cx="12" cy="18" r="0.8" fill="#4a3728"/><circle cx="16" cy="16" r="0.8" fill="#4a3728"/><circle cx="10" cy="14" r="0.8" fill="#4a3728"/><circle cx="14" cy="14" r="0.8" fill="#4a3728"/></svg>`,
+    "book": `<svg viewBox="0 0 24 24"><path d="M4 6c0-1.1.9-2 2-2h6v16H6c-1.1 0-2-.9-2-2V6zm16 0c0-1.1-.9-2-2-2h-6v16h6c1.1 0 2-.9 2-2V6z" fill="#daeeff" stroke="#9dcce8" stroke-width="1.5"/><path d="M4 6c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2H4z" fill="#8d6e5a"/></svg>`,
+    "camera": `<svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2" fill="#4a3728"/><path d="M8 7V5h8v2" fill="#4a3728"/><circle cx="12" cy="13.5" r="4" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/><circle cx="19" cy="10" r="1" fill="#f25f5c"/></svg>`
 };
 
 // ================= EMOTIONAL INTELLIGENCE KEYWORDS =================
@@ -195,7 +205,24 @@ let selectedBg = '#fdfbf7';
 let selectedFont = "'Indie Flower', cursive";
 let selectedLayout = 'left';
 let selectedStickers = [];
+let selectedSeal = 'circle';
+let isLocked = true;
+
+// ================= WAX SEALS =================
+const SEALS = {
+    circle: `
+        <circle cx="70" cy="50" r="16" fill="var(--accent-red)" filter="url(#seal-shadow)"/>
+        <circle cx="70" cy="50" r="14" fill="none" stroke="#6b1e1e" stroke-width="0.5" opacity="0.6"/>
+        <text x="70" y="56" font-family="'Dancing Script', cursive" font-size="18" font-weight="bold" fill="#ffd700" text-anchor="middle">S</text>
+    `,
+    heart: `
+        <path d="M 70 40 C 55 28 45 50 70 64 C 95 50 85 28 70 40" fill="var(--accent-red)" filter="url(#seal-shadow)"/>
+        <path d="M 70 42 C 58 32 50 50 70 61 C 90 50 82 32 70 42" fill="none" stroke="#6b1e1e" stroke-width="0.5" opacity="0.6"/>
+        <text x="70" y="55" font-family="'Dancing Script', cursive" font-size="16" font-weight="bold" fill="#ffd700" text-anchor="middle">S</text>
+    `
+};
 let firebaseLetters = {};
+let currentUser = null;
 
 // Voice Recording State
 let mediaRecorder = null;
@@ -204,9 +231,10 @@ let voiceBlob = null;
 let recordStartTime = 0;
 let recordInterval = null;
 const MAX_RECORD_MS = 30000;
+const PREMIUM_MAX_RECORD_MS = 300000;
 
 // Photo File State
-let photoFile = null;
+let photoFiles = []; // Array of files, max 10
 
 // ================= FIREBASE SETUP =================
 const firebaseConfig = {
@@ -223,6 +251,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 const storage = firebase.storage();
+const auth = firebase.auth();
 const THREE_DAYS_MS = 3 * 24 * 60 * 60 * 1000;
 
 // ================= INITIALIZATION =================
@@ -293,27 +322,25 @@ function generateFlightKey() {
 }
 
 // ================= ENVELOPE SVG BUILDER =================
-function buildEnvelopeSVG(colorSet, initial) {
+function buildEnvelopeSVG(colorSet, initial, sealType = 'circle') {
     const { bg, border, seal } = colorSet;
+    const sealContent = SEALS[sealType] || SEALS.circle;
     return `
         <svg class="env-body" viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
             <!-- Envelope body -->
             <rect class="env-rect" x="1" y="1" width="138" height="98" rx="3"
                   fill="${bg}" stroke="${border}" stroke-width="2"/>
             <!-- Top flap -->
-            <polygon class="env-flap" points="1,1 139,1 70,52"
+            <polygon class="env-flap" points="1,1 139,1 70,50"
                      fill="${border}" opacity="0.55"/>
             <!-- Bottom-left fold line -->
-            <line class="env-fold" x1="1" y1="99" x2="70" y2="52"
+            <line class="env-fold" x1="1" y1="99" x2="70" y2="50"
                   stroke="${border}" stroke-width="1.2" opacity="0.6"/>
             <!-- Bottom-right fold line -->
-            <line class="env-fold" x1="139" y1="99" x2="70" y2="52"
+            <line class="env-fold" x1="139" y1="99" x2="70" y2="50"
                   stroke="${border}" stroke-width="1.2" opacity="0.6"/>
             <!-- Wax seal -->
-            <circle class="env-seal" cx="70" cy="70" r="14" fill="${seal}" opacity="0.82"/>
-            <text class="env-seal-text" x="70" y="70"
-                  fill="#fdfbf7" font-family="'Dancing Script', cursive" font-size="13"
-                  text-anchor="middle" dominant-baseline="middle">${initial}</text>
+            ${sealContent}
         </svg>
     `;
 }
@@ -333,12 +360,12 @@ function triggerSearch() {
 
     // Search hardcoded vault
     const vaultMatches = Object.entries(secretVault).filter(([code, item]) => {
-        return item.name.toLowerCase().includes(term);
+        return item.name.toLowerCase().startsWith(term);
     });
 
     // Search firebase (ignoring expired)
     const firebaseMatches = Object.entries(firebaseLetters).filter(([key, item]) => {
-        const isMatch = item.recipient && item.recipient.toLowerCase().includes(term);
+        const isMatch = item.recipient && item.recipient.toLowerCase().startsWith(term);
         const isExpired = Date.now() - item.createdAt > THREE_DAYS_MS;
         if (isMatch && isExpired) {
             db.ref(`mailroom/${key}`).remove();
@@ -378,7 +405,8 @@ function triggerSearch() {
             stickers: note.stickers,
             photoURL: note.photoURL,
             voiceURL: note.voiceURL,
-            createdAt: note.createdAt
+            createdAt: note.createdAt,
+            isLocked: note.isLocked
         };
         const card = createEnvelopeCard(key, person, index++);
         searchResults.appendChild(card);
@@ -397,9 +425,11 @@ function createEnvelopeCard(code, person, cardIndex) {
         ? person.message.slice(0, 40) + '...'
         : person.message;
 
+    const lockIcon = person.isLocked !== false ? ' 🔒' : '';
+
     card.innerHTML = `
         ${buildEnvelopeSVG(colorSet, initial)}
-        <div class="envelope-label">To: ${person.name}</div>
+        <div class="envelope-label">To: ${person.name}${lockIcon}</div>
         <div class="letter-peek">
             <p class="peek-snippet">"${snippet.replace(/</g, "&lt;")}"</p>
         </div>
@@ -413,7 +443,7 @@ function createEnvelopeCard(code, person, cardIndex) {
 function openLetterModal(code, person) {
     currentActiveCode = code;
 
-    modalGreeting.textContent = `Dear ${person.name},`;
+    modalGreeting.textContent = `Dear ${person.name || person.recipient || 'Friend'},`;
     modalMessage.textContent = person.message;
     modalMessage.className = 'modal-text blurred';
 
@@ -430,19 +460,43 @@ function openLetterModal(code, person) {
     const modalContent = document.getElementById('letter-modal-inner');
     modalContent.style.backgroundColor = design.bgColor || '#fdfbf7';
     modalMessage.style.fontFamily = design.font || "'Indie Flower', cursive";
-    modalMessage.style.textAlign = design.layout || 'left';
+    let alignValue = design.layout || 'left';
+    if (alignValue === 'centered') alignValue = 'center';
+    if (alignValue === 'poetic') alignValue = 'right';
+
+    if (alignValue === 'two-columns') {
+        modalMessage.style.columnCount = '2';
+        modalMessage.style.columnGap = '20px';
+        modalMessage.style.textAlign = 'left';
+    } else {
+        modalMessage.style.columnCount = '1';
+        modalMessage.style.textAlign = alignValue;
+    }
     modalSignature.style.fontFamily = design.font || "'Indie Flower', cursive";
+
+    if (modalGreeting) {
+        modalGreeting.style.fontFamily = design.font || "'Indie Flower', cursive";
+        modalGreeting.style.fontWeight = 'bold';
+    }
 
     // Render stickers
     const modalStickersDiv = document.getElementById('modal-stickers');
     modalStickersDiv.innerHTML = '';
     if (person.stickers && person.stickers.length > 0) {
-        person.stickers.forEach(stkId => {
-            const svg = STICKERS[stkId];
+        person.stickers.forEach(stk => {
+            const id = typeof stk === 'string' ? stk : stk.id;
+            const svg = STICKERS[id];
             if (svg) {
                 const div = document.createElement('div');
                 div.className = 'modal-sticker-svg';
                 div.innerHTML = svg;
+                if (typeof stk === 'object') {
+                    div.style.left = stk.x;
+                    div.style.top = stk.y;
+                } else {
+                    div.style.position = 'relative';
+                    div.style.display = 'inline-block';
+                }
                 modalStickersDiv.appendChild(div);
             }
         });
@@ -484,14 +538,27 @@ function openLetterModal(code, person) {
     }
 
     // Reset Passcode form
-    passwordOverlay.style.display = 'block';
-    const letterBody = document.getElementById('letter-body');
-    if (letterBody) letterBody.style.display = 'none';
-    unlockPasscode.value = '';
-    unlockError.classList.remove('active');
+    if (person.isLocked === false) {
+        passwordOverlay.style.display = 'none';
+        const letterBody = document.getElementById('letter-body');
+        if (letterBody) letterBody.style.display = 'block';
+        modalMessage.classList.remove('blurred');
+        modalMessage.classList.add('unblurred');
+        if (modalSignature) {
+            modalSignature.classList.remove('blurred');
+            modalSignature.classList.add('unblurred');
+        }
+        letterModal.classList.add('active');
+    } else {
+        passwordOverlay.style.display = 'block';
+        const letterBody = document.getElementById('letter-body');
+        if (letterBody) letterBody.style.display = 'none';
+        unlockPasscode.value = '';
+        unlockError.classList.remove('active');
 
-    letterModal.classList.add('active');
-    setTimeout(() => unlockPasscode.focus(), 120);
+        letterModal.classList.add('active');
+        setTimeout(() => unlockPasscode.focus(), 120);
+    }
 }
 
 function openUnfoldModal(note) {
@@ -500,20 +567,41 @@ function openUnfoldModal(note) {
     unfoldInner.style.backgroundColor = design.bgColor || '#fdfbf7';
 
     caughtRecipient.textContent = `Dear ${note.recipient},`;
+    caughtRecipient.style.fontFamily = design.font || "'Indie Flower', cursive";
+    caughtRecipient.style.fontWeight = 'bold';
     caughtMessage.textContent = note.message;
     caughtMessage.style.fontFamily = design.font || "'Indie Flower', cursive";
-    caughtMessage.style.textAlign = design.layout || 'left';
+    let alignValueCaught = design.layout || 'left';
+    if (alignValueCaught === 'centered') alignValueCaught = 'center';
+    if (alignValueCaught === 'poetic') alignValueCaught = 'right';
+    
+    if (alignValueCaught === 'two-columns') {
+        caughtMessage.style.columnCount = '2';
+        caughtMessage.style.columnGap = '20px';
+        caughtMessage.style.textAlign = 'left';
+    } else {
+        caughtMessage.style.columnCount = '1';
+        caughtMessage.style.textAlign = alignValueCaught;
+    }
 
     // Display stickers
     const caughtStickersDiv = document.getElementById('caught-stickers');
     caughtStickersDiv.innerHTML = '';
     if (note.stickers && note.stickers.length > 0) {
-        note.stickers.forEach(stkId => {
-            const svg = STICKERS[stkId];
+        note.stickers.forEach(stk => {
+            const id = typeof stk === 'string' ? stk : stk.id;
+            const svg = STICKERS[id];
             if (svg) {
                 const div = document.createElement('div');
                 div.className = 'modal-sticker-svg';
                 div.innerHTML = svg;
+                if (typeof stk === 'object') {
+                    div.style.left = stk.x;
+                    div.style.top = stk.y;
+                } else {
+                    div.style.position = 'relative';
+                    div.style.display = 'inline-block';
+                }
                 caughtStickersDiv.appendChild(div);
             }
         });
@@ -521,14 +609,18 @@ function openUnfoldModal(note) {
 
     // Display photo
     const caughtPhotoDiv = document.getElementById('caught-photo');
-    const caughtPhotoImg = document.getElementById('caught-photo-img');
+    caughtPhotoDiv.innerHTML = '';
+    let hasPhotos = false;
     if (note.photoURL) {
-        caughtPhotoImg.src = note.photoURL;
-        caughtPhotoDiv.style.display = 'block';
-    } else {
-        caughtPhotoImg.src = '';
-        caughtPhotoDiv.style.display = 'none';
+        hasPhotos = true;
+        const img = document.createElement('img');
+        img.src = note.photoURL;
+        img.style.maxWidth = '100%';
+        img.style.borderRadius = '8px';
+        caughtPhotoDiv.appendChild(img);
     }
+    
+    caughtPhotoDiv.style.display = hasPhotos ? 'block' : 'none';
 
     // Display voice
     const caughtVoiceDiv = document.getElementById('caught-voice');
@@ -634,51 +726,94 @@ function initStickerPanel() {
         btn.dataset.id = id;
         btn.innerHTML = svgMarkup;
         btn.title = id.replace('-', ' ');
-        btn.addEventListener('click', () => toggleSticker(id, btn));
+        btn.addEventListener('click', () => addDraggableSticker(id));
         stickerPanel.appendChild(btn);
     });
 }
 
-function toggleSticker(id, buttonEl) {
-    const idx = selectedStickers.indexOf(id);
-    if (idx > -1) {
-        selectedStickers.splice(idx, 1);
-        buttonEl.classList.remove('active');
-    } else {
-        if (selectedStickers.length >= 5) {
-            alert("Scrapbooks look best with up to 5 stickers per page! ✨");
-            return;
-        }
-        selectedStickers.push(id);
-        buttonEl.classList.add('active');
+function addDraggableSticker(id) {
+    const canvas = document.getElementById('compose-canvas');
+    if (canvas.querySelectorAll('.draggable-sticker').length >= 5) {
+        alert("Scrapbooks look best with up to 5 stickers per page! ✨");
+        return;
     }
-    updateSelectedStickersUI();
-}
 
-function updateSelectedStickersUI() {
-    selectedStickersContainer.innerHTML = '';
-    selectedStickers.forEach(id => {
-        const badge = document.createElement('div');
-        badge.className = 'selected-sticker-badge';
-        badge.innerHTML = `
-            <span>${id.replace('-', ' ')}</span>
-            <button type="button" class="remove-badge-btn">&times;</button>
-        `;
-        badge.querySelector('.remove-badge-btn').addEventListener('click', () => {
-            selectedStickers = selectedStickers.filter(s => s !== id);
-            const btn = stickerPanel.querySelector(`.sticker-item[data-id="${id}"]`);
-            if (btn) btn.classList.remove('active');
-            updateSelectedStickersUI();
-        });
-        selectedStickersContainer.appendChild(badge);
+    const stickerEl = document.createElement('div');
+    stickerEl.className = 'draggable-sticker';
+    stickerEl.dataset.id = id;
+    
+    // Initial placement in the center-ish
+    const randomX = 30 + Math.random() * 20;
+    const randomY = 30 + Math.random() * 20;
+    stickerEl.style.left = `${randomX}%`;
+    stickerEl.style.top = `${randomY}%`;
+    
+    stickerEl.innerHTML = `
+        ${STICKERS[id]}
+        <button type="button" class="remove-sticker-btn">&times;</button>
+    `;
+    
+    stickerEl.querySelector('.remove-sticker-btn').addEventListener('click', (e) => {
+        e.stopPropagation();
+        stickerEl.remove();
     });
+
+    let isDragging = false;
+    let startX, startY, startLeft, startTop;
+
+    const startDrag = (e) => {
+        if (e.target.classList.contains('remove-sticker-btn')) return;
+        isDragging = true;
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+        startX = clientX;
+        startY = clientY;
+        startLeft = parseFloat(stickerEl.style.left) || 0;
+        startTop = parseFloat(stickerEl.style.top) || 0;
+        e.preventDefault();
+    };
+
+    const doDrag = (e) => {
+        if (!isDragging) return;
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+        const dx = clientX - startX;
+        const dy = clientY - startY;
+        
+        const canvasRect = canvas.getBoundingClientRect();
+        const dxPercent = (dx / canvasRect.width) * 100;
+        const dyPercent = (dy / canvasRect.height) * 100;
+
+        let newLeft = startLeft + dxPercent;
+        let newTop = startTop + dyPercent;
+
+        newLeft = Math.max(2, Math.min(newLeft, 85));
+        newTop = Math.max(2, Math.min(newTop, 78));
+
+        stickerEl.style.left = `${newLeft}%`;
+        stickerEl.style.top = `${newTop}%`;
+    };
+
+    const stopDrag = () => {
+        isDragging = false;
+    };
+
+    stickerEl.addEventListener('mousedown', startDrag);
+    document.addEventListener('mousemove', doDrag);
+    document.addEventListener('mouseup', stopDrag);
+
+    stickerEl.addEventListener('touchstart', startDrag, {passive: false});
+    document.addEventListener('touchmove', doDrag, {passive: false});
+    document.addEventListener('touchend', stopDrag);
+
+    canvas.appendChild(stickerEl);
 }
 
 // ================= DESIGN TOOLKIT SYSTEM =================
 function initToolkitPickers() {
     // Background Color
-    bgSwatches.querySelectorAll('.swatch').forEach(swatch => {
-        swatch.addEventListener('click', () => {
+    bgSwatches.querySelectorAll('.swatch').forEach((swatch, idx) => {
+        swatch.addEventListener('click', (e) => {
             bgSwatches.querySelector('.swatch.active').classList.remove('active');
             swatch.classList.add('active');
             selectedBg = swatch.dataset.color;
@@ -687,8 +822,8 @@ function initToolkitPickers() {
     });
 
     // Fonts Selector
-    fontPicker.querySelectorAll('.font-opt').forEach(opt => {
-        opt.addEventListener('click', () => {
+    fontPicker.querySelectorAll('.font-opt').forEach((opt, idx) => {
+        opt.addEventListener('click', (e) => {
             fontPicker.querySelector('.font-opt.active').classList.remove('active');
             opt.classList.add('active');
             selectedFont = opt.dataset.font;
@@ -696,15 +831,46 @@ function initToolkitPickers() {
         });
     });
 
-    // Layout Selector
-    layoutPicker.querySelectorAll('.layout-opt').forEach(opt => {
-        opt.addEventListener('click', () => {
+    // Layout (Text Align)
+    layoutPicker.querySelectorAll('.layout-opt').forEach((opt, idx) => {
+        opt.addEventListener('click', (e) => {
             layoutPicker.querySelector('.layout-opt.active').classList.remove('active');
             opt.classList.add('active');
             selectedLayout = opt.dataset.layout;
-            composeMessage.style.textAlign = selectedLayout;
+            
+            let alignValue = selectedLayout;
+            if (alignValue === 'centered') alignValue = 'center';
+            if (alignValue === 'poetic') alignValue = 'right';
+
+            if (alignValue === 'two-columns') {
+                composeMessage.style.textAlign = 'left';
+            } else {
+                composeMessage.style.textAlign = alignValue;
+            }
         });
     });
+
+    // Seal
+    const sealPicker = document.getElementById('seal-picker');
+    if (sealPicker) {
+        sealPicker.querySelectorAll('.seal-opt').forEach((opt, idx) => {
+            opt.addEventListener('click', (e) => {
+                sealPicker.querySelector('.seal-opt.active').classList.remove('active');
+                opt.classList.add('active');
+                selectedSeal = opt.dataset.seal;
+            });
+        });
+    }
+
+    // Privacy Toggle
+    const lockToggle = document.getElementById('lock-toggle');
+    const privacyStatus = document.getElementById('privacy-status');
+    if (lockToggle && privacyStatus) {
+        lockToggle.addEventListener('change', (e) => {
+            isLocked = e.target.checked;
+            privacyStatus.textContent = isLocked ? "Locked 🔐" : "Unlocked 🔓";
+        });
+    }
 }
 
 // ================= EMOTIONAL INTELLIGENCE SYSTEM =================
@@ -750,19 +916,27 @@ function detectAndDisplayMood(text) {
 photoInput.addEventListener('change', (e) => {
     const file = e.target.files[0];
     if (!file) return;
+    photoFiles = [file];
+    renderPhotoGallery();
+});
 
-    photoFile = file;
+function renderPhotoGallery() {
+    if (photoFiles.length === 0) {
+        photoPreview.style.display = 'none';
+        return;
+    }
+    
+    const file = photoFiles[0];
     const reader = new FileReader();
     reader.onload = (event) => {
         photoThumb.src = event.target.result;
-        photoPreview.style.display = 'flex';
+        photoPreview.style.display = 'block';
     };
     reader.readAsDataURL(file);
-});
+}
 
 removePhotoBtn.addEventListener('click', () => {
-    photoFile = null;
-    photoInput.value = '';
+    photoFiles = [];
     photoPreview.style.display = 'none';
     photoThumb.src = '';
 });
@@ -790,7 +964,7 @@ function compressImage(file, maxWidth = 800) {
 
                 canvas.toBlob((blob) => {
                     resolve(blob);
-                }, 'image/jpeg', 0.85);
+                }, 'image/jpeg', 0.70);
             };
             img.src = e.target.result;
         };
@@ -813,7 +987,7 @@ async function startRecording() {
 
     try {
         const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-        mediaRecorder = new MediaRecorder(stream);
+        mediaRecorder = new MediaRecorder(stream, { audioBitsPerSecond: 32000 });
 
         mediaRecorder.ondataavailable = (event) => {
             if (event.data.size > 0) audioChunks.push(event.data);
@@ -837,23 +1011,21 @@ async function startRecording() {
         recordTimer.style.display = 'inline';
 
         recordStartTime = Date.now();
-        updateTimer();
-        recordInterval = setInterval(updateTimer, 500);
+
+        recordInterval = setInterval(() => {
+            const elapsed = Date.now() - recordStartTime;
+            if (elapsed >= MAX_RECORD_MS) {
+                stopRecording();
+                return;
+            }
+            const sec = Math.floor(elapsed / 1000);
+            recordTimer.textContent = `0:${sec.toString().padStart(2, '0')} / 0:30`;
+        }, 500);
 
     } catch (err) {
         console.error("Error accessing microphone:", err);
         alert("Couldn't open microphone. Please allow micro-access.");
     }
-}
-
-function updateTimer() {
-    const elapsed = Date.now() - recordStartTime;
-    if (elapsed >= MAX_RECORD_MS) {
-        stopRecording();
-        return;
-    }
-    const sec = Math.floor(elapsed / 1000);
-    recordTimer.textContent = `0:${sec.toString().padStart(2, '0')} / 0:30`;
 }
 
 function stopRecording() {
@@ -887,9 +1059,8 @@ composeForm.addEventListener('submit', async (e) => {
         let photoURL = '';
         let voiceURL = '';
 
-        // 1. Upload photo if present
-        if (photoFile) {
-            const compressed = await compressImage(photoFile, 800);
+        if (photoFiles.length > 0) {
+            const compressed = await compressImage(photoFiles[0], 800);
             const photoRef = storage.ref().child(`letters/${flightKey}/photo-${Date.now()}.jpg`);
             const uploadTask = await photoRef.put(compressed);
             photoURL = await uploadTask.ref.getDownloadURL();
@@ -902,20 +1073,46 @@ composeForm.addEventListener('submit', async (e) => {
             voiceURL = await uploadTask.ref.getDownloadURL();
         }
 
+        // Collect stickers from canvas
+        const canvas = document.getElementById('compose-canvas');
+        const stickerEls = canvas.querySelectorAll('.draggable-sticker');
+        const finalStickers = [];
+        stickerEls.forEach(el => {
+            finalStickers.push({
+                id: el.dataset.id,
+                x: el.style.left,
+                y: el.style.top
+            });
+        });
+
         // 3. Save to Realtime Database
-        await db.ref(`mailroom/${flightKey}`).set({
+        const letterData = {
             recipient,
             message,
-            photoURL,
-            voiceURL,
             createdAt: Date.now(),
+            isLocked: isLocked,
             design: {
-                bgColor: selectedBg,
+                background: selectedBg,
                 font: selectedFont,
-                layout: selectedLayout
-            },
-            stickers: selectedStickers
-        });
+                layout: selectedLayout,
+                seal: selectedSeal,
+                isLocked: isLocked,
+                photoURL: photoURL,
+                voiceURL: voiceURL,
+                stickers: finalStickers
+            }
+        };
+
+        await db.ref(`mailroom/${flightKey}`).set(letterData);
+
+        // Also save to user's sent_letters history if logged in
+        if (currentUser) {
+            await db.ref(`users/${currentUser.uid}/sent_letters/${flightKey}`).set({
+                flightKey,
+                recipient,
+                createdAt: letterData.createdAt
+            });
+        }
 
         // 4. Play origami plane animation
         origamiContainer.classList.add('active');
@@ -959,17 +1156,20 @@ function resetComposerDesign() {
     layoutPicker.querySelector('.layout-opt.active').classList.remove('active');
     layoutPicker.querySelector('[data-layout="left"]').classList.add('active');
     selectedLayout = 'left';
-    composeMessage.style.textAlign = selectedLayout;
+    composeMessage.style.textAlign = 'left';
 
     // Stickers
     selectedStickers = [];
     stickerPanel.querySelectorAll('.sticker-item.active').forEach(b => b.classList.remove('active'));
-    updateSelectedStickersUI();
+    const canvas = document.getElementById('compose-canvas');
+    if (canvas) {
+        canvas.querySelectorAll('.draggable-sticker').forEach(el => el.remove());
+    }
 
     // Attachments
-    photoFile = null;
+    photoFiles = [];
     photoPreview.style.display = 'none';
-    photoThumb.src = '';
+    photoPreview.innerHTML = '';
 
     voiceBlob = null;
     voicePreview.style.display = 'none';
@@ -1100,3 +1300,214 @@ function renderEnvelopeBanner() {
         marqueeContent.appendChild(miniCard);
     });
 }
+
+// ================= ANONYMOUS MOOD SECTION LOGIC =================
+window.addEventListener('DOMContentLoaded', () => {
+    const tabRead = document.getElementById('tab-read');
+    const tabWrite = document.getElementById('tab-write');
+    const modeRead = document.getElementById('mood-read-mode');
+    const modeWrite = document.getElementById('mood-write-mode');
+    
+    // Tab Switching
+    tabRead.addEventListener('click', () => {
+        tabWrite.classList.remove('active');
+        tabRead.classList.add('active');
+        modeWrite.style.display = 'none';
+        modeRead.style.display = 'block';
+    });
+    
+    tabWrite.addEventListener('click', () => {
+        tabRead.classList.remove('active');
+        tabWrite.classList.add('active');
+        modeRead.style.display = 'none';
+        modeWrite.style.display = 'block';
+    });
+
+    const moods = [
+        { id: "happy", label: "Happy 😊" },
+        { id: "sad", label: "Sad 🌧️" },
+        { id: "broken", label: "Broken 💔" },
+        { id: "excited", label: "Excited ✨" },
+        { id: "in_love", label: "In Love 💘" },
+        { id: "mad", label: "Mad 🌪️" },
+        { id: "hopeful", label: "Hopeful 🌱" },
+        { id: "lonely", label: "Lonely 🌘" },
+        { id: "anxious", label: "Anxious ⚡" },
+        { id: "grateful", label: "Grateful 🙏" },
+        { id: "nostalgic", label: "Nostalgic 🕰️" },
+        { id: "confused", label: "Confused 🌀" },
+        { id: "proud", label: "Proud 👑" },
+        { id: "tired", label: "Tired 💤" },
+        { id: "inspired", label: "Inspired 💡" }
+    ];
+
+    const moodFilterPills = document.getElementById('mood-filter-pills');
+    const moodSelectPills = document.getElementById('mood-select-pills');
+    const notesGrid = document.getElementById('anonymous-notes-grid');
+
+    // Populate Pills
+    moods.forEach(mood => {
+        // Read Filter Pill
+        const readPill = document.createElement('div');
+        readPill.className = 'mood-pill';
+        readPill.dataset.mood = mood.id;
+        readPill.textContent = mood.label;
+        readPill.addEventListener('click', () => {
+            document.querySelectorAll('#mood-filter-pills .mood-pill').forEach(p => p.classList.remove('active'));
+            readPill.classList.add('active');
+            renderAnonymousNotes(mood.id);
+        });
+        moodFilterPills.appendChild(readPill);
+
+        // Write Select Pill (Multiple selection)
+        const writePill = document.createElement('div');
+        writePill.className = 'mood-pill';
+        writePill.dataset.mood = mood.id;
+        writePill.textContent = mood.label;
+        writePill.addEventListener('click', () => {
+            writePill.classList.toggle('active');
+            
+            const activePills = document.querySelectorAll('#mood-select-pills .mood-pill.active');
+            if (activePills.length > 0) {
+                document.getElementById('anonymous-error-msg').style.display = 'none';
+            }
+        });
+        moodSelectPills.appendChild(writePill);
+    });
+
+    let allAnonymousNotes = {};
+
+    // Fetch Anonymous Notes from Firebase
+    db.ref('anonymous_notes').on('value', (snapshot) => {
+        allAnonymousNotes = snapshot.val() || {};
+        // If a mood is currently selected in read mode, re-render
+        const activeFilter = document.querySelector('#mood-filter-pills .mood-pill.active');
+        if (activeFilter) {
+            renderAnonymousNotes(activeFilter.dataset.mood);
+        }
+    });
+
+    function renderAnonymousNotes(moodId) {
+        notesGrid.innerHTML = '';
+        
+        const matchedNotes = Object.values(allAnonymousNotes).filter(n => {
+            if (Array.isArray(n.mood)) {
+                return n.mood.includes(moodId);
+            }
+            return n.mood === moodId;
+        });
+        
+        if (matchedNotes.length === 0) {
+            notesGrid.innerHTML = '<div class="search-empty" style="grid-column: 1 / -1;">It\'s quiet here... Be the first to leave a note for this feeling.</div>';
+            return;
+        }
+
+        // Sort newest first
+        matchedNotes.sort((a, b) => b.timestamp - a.timestamp);
+
+        matchedNotes.forEach(note => {
+            const card = document.createElement('div');
+            card.className = 'anon-note-card';
+            
+            const content = document.createElement('div');
+            content.className = 'anon-note-content';
+            content.textContent = note.message;
+            
+            const meta = document.createElement('div');
+            meta.className = 'anon-note-meta';
+            
+            const tagsContainer = document.createElement('div');
+            tagsContainer.style.display = 'flex';
+            tagsContainer.style.gap = '5px';
+            tagsContainer.style.flexWrap = 'wrap';
+
+            const noteMoods = Array.isArray(note.mood) ? note.mood : [note.mood];
+            
+            noteMoods.forEach(m => {
+                const tag = document.createElement('span');
+                tag.className = 'anon-note-tag mood-pill active';
+                if (noteMoods.length > 1) {
+                    tag.classList.add('small-tag');
+                }
+                tag.dataset.mood = m;
+                tag.textContent = moods.find(md => md.id === m)?.label || m;
+                tagsContainer.appendChild(tag);
+            });
+            
+            const date = document.createElement('span');
+            date.textContent = new Date(note.timestamp).toLocaleDateString();
+
+            meta.appendChild(tagsContainer);
+            meta.appendChild(date);
+            
+            card.appendChild(content);
+            card.appendChild(meta);
+            notesGrid.appendChild(card);
+        });
+    }
+
+    // Submit new anonymous note
+    const anonForm = document.getElementById('anonymous-form');
+    anonForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const message = document.getElementById('anonymous-message').value.trim();
+        const activePills = document.querySelectorAll('#mood-select-pills .mood-pill.active');
+        const selectedMoods = Array.from(activePills).map(p => p.dataset.mood);
+        
+        const errorMsg = document.getElementById('anonymous-error-msg');
+        const successMsg = document.getElementById('anonymous-success-msg');
+        const btn = document.getElementById('anonymous-send-btn');
+        
+        if (!selectedMoods || selectedMoods.length === 0) {
+            errorMsg.style.display = 'block';
+            return;
+        }
+        
+        errorMsg.style.display = 'none';
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
+
+        const noteData = {
+            message: message,
+            mood: selectedMoods,
+            timestamp: Date.now()
+        };
+
+        db.ref('anonymous_notes').push(noteData)
+            .then(() => {
+                successMsg.style.display = 'block';
+                btn.textContent = 'Sent! ✨';
+                
+                anonForm.reset();
+                document.querySelectorAll('#mood-select-pills .mood-pill').forEach(p => p.classList.remove('active'));
+                
+                setTimeout(() => {
+                    successMsg.style.display = 'none';
+                    btn.textContent = 'Release into the Universe ✈️';
+                    btn.disabled = false;
+                }, 3000);
+            })
+            .catch(error => {
+                console.error("Error saving note:", error);
+                alert("Oh no! The wind was too strong. (Error: " + error.message + ") Try again?");
+                btn.textContent = 'Release into the Universe ✈️';
+                btn.disabled = false;
+            });
+    });
+});
+// ================= ALIGN MOOD SECTION TO GRID =================
+function alignMoodSectionToGrid() {
+    const moodSection = document.getElementById('anonymous-mood');
+    if (!moodSection) return;
+    moodSection.style.marginTop = '0px';
+    const topOffset = moodSection.offsetTop;
+    const remainder = topOffset % 32;
+    if (remainder !== 0) {
+        moodSection.style.marginTop = (32 - remainder) + 'px';
+    }
+}
+window.addEventListener('resize', alignMoodSectionToGrid);
+window.addEventListener('load', alignMoodSectionToGrid);
+setTimeout(alignMoodSectionToGrid, 100);
+setTimeout(alignMoodSectionToGrid, 500);
